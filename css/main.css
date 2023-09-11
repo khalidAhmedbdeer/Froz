@@ -39,6 +39,11 @@ body{
     /* هنحطها لما نضغط علي الثلاثه نقاط */
     /* overflow: hidden; */
 }
+@media (max-height: 771px) {
+    body{
+        height: 100% !important;
+    }
+}
 @media (max-width: 771px) {
     body{
         background-size:auto;
