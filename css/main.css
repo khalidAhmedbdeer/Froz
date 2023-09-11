@@ -73,18 +73,16 @@ body{
 }
 @media (max-width: 776px) {
     .main-body{
-        /* ممكن تتظبط اكتر من كده نقللفها في الشاشات الصغيره خالص */
         width: 95%;
         top: 15%;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .main-body{
-        /* ممكن تتظبط اكتر من كده نقللفها في الشاشات الصغيره خالص */
         top: 0%;
     }
 }
-/* عاوزين نعمل زي غمامه علي كل حاجه وميقدرش يضغط علي اي حاجه  */
+
 .menu::before{
     position: absolute;
     content: "";
@@ -152,33 +150,6 @@ body{
     background: white;
     border-radius: 55px;
 }
-/* .menu .center .snapchat .icon{
-    background-color: yellow;
-    color: black;
-} */
-/* .menu .center .facebook .icon{
-    background-color: rgb(24, 119, 242);
-}
-.menu .center .linkedin .icon{
-    background-color: rgb(10, 102, 194);
-}
-.menu .center .twitter .icon{
-    background-color:  rgb(29, 161, 242);
-}
-.menu .center .whatsapp .icon{
-    background-color: rgb(0, 230, 118);
-}
-.menu .center .messenger .icon{
-    background-color: rgb(24, 119, 242);
-}
-.menu .center .bracket .icon{
-    background-color: rgb(243, 243, 241);
-    color: black;
-} */
-/* .menu .center .icon i{
-    background: white;
-    border-radius: 55px;
-} */
 .menu .center h3{
     flex: 1;
     margin-left: 20px;
@@ -223,8 +194,7 @@ body{
     padding: 0px;
     color: rgb(0, 0, 0);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 13px;        
 }
 
 /* -------------------------------- */
