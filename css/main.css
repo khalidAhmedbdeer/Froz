@@ -1,0 +1,377 @@
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    margin: auto;
+}
+/* Start Grid System */
+/* Phones */
+@media (min-width:576px) {
+    .container{
+        width: 540px;
+    }
+}
+/* Tablets */
+@media (min-width:767px) {
+    .container{
+        width: 720px;
+    }
+}
+/* Desktops */
+@media (min-width:992px) {
+    .container{
+        width: 960px;
+    }
+}
+/* Large Screen */
+@media (min-width:1200px) {
+    .container{
+        width: 1140px;
+    }
+}
+/* End Grid System */
+body{
+    background-image:url(https://ugc.production.linktr.ee/gUYDFMDRDGRRfMOsJO6B_8xbvYVfVfeZ5HXVu?io=true&size=background-profile-v1) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* هنحطها لما نضغط علي الثلاثه نقاط */
+    /* overflow: hidden; */
+}
+@media (max-width: 771px) {
+    body{
+        background-size:auto;
+    }
+}
+@media (max-width: 991px) {
+    body{
+        height: 100vh;
+    }
+}
+.menu{
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+/* عاوزين نظبط الريسبونسف بتاع التلفون والتابلت اولا بتاع التلفون هنخلي المينيو تكون من تكت وفي التابلت هنظبط الصوره الي في البدي */
+.main-body{
+    position: absolute;
+    z-index: 1000;
+    max-height: 100%;
+    overflow-y: auto;
+    width: 400px;
+    left: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px ;
+    transform: translateX(-50%);
+}
+@media (max-width: 776px) {
+    .main-body{
+        /* ممكن تتظبط اكتر من كده نقللفها في الشاشات الصغيره خالص */
+        width: 95%;
+        top: 15%;
+    }
+}
+@media (max-width: 400px) {
+    .main-body{
+        /* ممكن تتظبط اكتر من كده نقللفها في الشاشات الصغيره خالص */
+        top: 0%;
+    }
+}
+/* عاوزين نعمل زي غمامه علي كل حاجه وميقدرش يضغط علي اي حاجه  */
+.menu::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60, 60, 60, 0.635)
+    
+}
+.menu .head{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .head h3{
+    color: black;
+}
+.menu .head .cencel{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    width: 20px;
+}
+.menu .center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .center {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.menu .center .cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 97%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.menu .center .cont:hover{
+    background-color: #eee;
+}
+.menu .center .icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    
+}
+@media (max-width: 776px) {
+    .menu .center .cont{
+        margin-bottom: 10px;
+    }
+}
+.menu .center .snapchat .icon i{
+    background: white;
+    border-radius: 55px;
+}
+/* .menu .center .snapchat .icon{
+    background-color: yellow;
+    color: black;
+} */
+/* .menu .center .facebook .icon{
+    background-color: rgb(24, 119, 242);
+}
+.menu .center .linkedin .icon{
+    background-color: rgb(10, 102, 194);
+}
+.menu .center .twitter .icon{
+    background-color:  rgb(29, 161, 242);
+}
+.menu .center .whatsapp .icon{
+    background-color: rgb(0, 230, 118);
+}
+.menu .center .messenger .icon{
+    background-color: rgb(24, 119, 242);
+}
+.menu .center .bracket .icon{
+    background-color: rgb(243, 243, 241);
+    color: black;
+} */
+/* .menu .center .icon i{
+    background: white;
+    border-radius: 55px;
+} */
+.menu .center h3{
+    flex: 1;
+    margin-left: 20px;
+}
+.menu .cont span svg{
+    width: 20px;
+}
+.menu .footer{
+    width: 100%;
+}
+.menu .footer .copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(224, 226, 217);
+    border-radius: 10px;
+    width: 90%;
+    padding: 0 10px ;
+    margin: 20px auto 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+@media (max-width: 776px) {
+    .menu .footer .copy{
+        margin: 10px auto 40px;
+    }
+}
+.menu .footer .copy:hover{
+    background-color: #eee;
+}
+.menu .footer .copy .icon{
+    width: 20px;
+    height: 20px;
+}
+.menu .footer .copy .icon svg{
+    color:#43e660;
+}
+.menu .footer .copy .url{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 13px;
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* -------------------------------- */
+.header{
+    max-width: 800px;
+    margin: auto;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
+}
+.header .logo img{
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+.header h3{
+    color: white;
+}
+.header .icon{
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+.header .icon span{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    margin-right: 1px;
+    border-radius: 50%;
+}
+
+.box {
+    margin-top: 30px;
+}
+.box .container{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.box .container .head .icon img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.box .head p{
+    color: white;
+}
+.box .head{
+    margin: auto;
+    margin-bottom: 20px;
+}
+.box .head h3{
+    color: white;
+}
+.box .center .cont {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    cursor: pointer;
+    color: rgb(115, 74, 102);
+}
+.box .center .cont:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 8px 0px;
+}
+.box .center .cont a{
+    text-decoration: none;
+    
+}
+.box .center .cont a .li{
+    padding: 14px 5px;
+    color: black;
+}
+.box .center .icon{
+    position: absolute;
+    right: 9px;
+    top: 7px;
+    display: flex;
+    flex-direction: row;
+    width: 35px;
+    height: 35px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+@media (max-width:991px) {
+    .box .center .icon{
+        opacity: 1;
+    }
+}
+.box .center .icon span{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    margin-right: 1px;
+    border-radius: 50%;
+}
+.box .center a:hover + .icon{
+    opacity: 1;
+}
+.box .center .icon:hover{
+    opacity: 1;
+    background-color: rgba(179, 179, 179, 0.461);
+}
+
+.box .footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer a > svg{
+    margin-right: 10px;
+    width: 30px;
+    fill: white; /* عادي لكن مش هيتلون الحواف لأنه كده مبقاش فيها حواف الموضوع عكسي color  لو هي شفافه من جوه لكن لو مش شفافه هتتلون من جوه بال  Svg ده بتلون الحواف بتاعه الصوره الي بصيغه ال*/
+}
+/* .center .li:hover::before{
+    content: "...";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    right: 9px;
+    top: 7px;
+    cursor: pointer;
+} */
